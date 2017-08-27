@@ -1,0 +1,9 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1><img [src]="logo"/><span style="color:#fffff0">{{title}}{{time}}</span></h1>
+<div style="opacity:transparent;">
+<div id="events" *ngFor="let event of events" style="margin-bottom:20px;">
+  <div style="border: 1px solid #fffff0; opacity:transparent; color:#fffff0;">
+    {{event}}
+  </div>
+</div>
+
