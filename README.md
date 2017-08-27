@@ -1,5 +1,6 @@
 npm install --save socket.io
 npm install --save socket.io-client
+npm install --save @types/socket.io-client
 npm install --save express
 npm install --save nodemon
 npm install --save @angular/cli
