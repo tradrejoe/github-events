@@ -7,11 +7,11 @@ import * as io from 'socket.io-client';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  private url = 'http://localhost:3000'; 
-  private socket;
-  private events : any[];
-  private time: string;
-  private logo = "./images/github.png";
+  public url = "www.pyfia.com:3000";
+  public socket;
+  public events : any[];
+  public time: string;
+  public logo = "./images/github.png";
 
   constructor() { 
   }
