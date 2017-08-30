@@ -6,5 +6,12 @@ ng build
 
 node indexjs &
 
-http://www.pyfia.com:3001
+#set GITHUB_TOKEN environment variable
+#change url in app.components.ts file.
+
+http://localhost:3000
+
+or see a publicly accessible running instance:
+
+http://www.pyfia.com:3000
 
