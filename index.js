@@ -3,6 +3,7 @@
 var path = require('path');
 var express = require('express');
 var app = express();
+app.use(express.static(path.join(__dirname, '/dist')));
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
@@ -19,7 +20,6 @@ io.on("connection", function(socket) {
 });
 
 //io.set('origins', '*:*');
-app.use(express.static(path.join(__dirname, '../app')));
 http.listen(port);
 console.log("app started...");
 
