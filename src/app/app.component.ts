@@ -7,7 +7,7 @@ import * as io from 'socket.io-client';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  public url = "http://localhost:3000";
+  public url = "http://www.pyfia.com:3000";
   public socket;
   public events : any[];
   public time: string;
@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     this.socket = io(this.url);
     console.log("socket connection established...");
     this.socket.on("github-events", (data) => {
-      //console.log("github-events..." + JSON.stringify(data));
+      console.log("github-events..." + JSON.stringify(data));
       this.events = [];
       for(var i=0; i<data.length;i++) {
         this.events.push(JSON.stringify(data[i]));

@@ -66,8 +66,6 @@ module.exports = function(accessToken) {
                     var events = JSON.parse(body);
                     //parseInfo(response.headers, events);
                     console.log("github events api return status 200, events=");
-                    //console.log(util.inspect(events, true, null));
-                    //console.log(events);
                     socket.broadcast.emit("github-events", mgr.filter(events));
                     socket.broadcast.emit("github-time", dt.getCurrUTCDateISO());
                 } else {

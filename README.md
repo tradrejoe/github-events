@@ -2,11 +2,9 @@ under github-events directory:
 
 npm install
 
-nodemon src/server/index.js &
+ng build
 
-ng serve &
+node indexjs &
 
-dev: http://localhost:3001
-
-prod: http://www.pyfia.com:3001
+http://www.pyfia.com:3001
 
